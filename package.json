@@ -1,0 +1,24 @@
+{
+  "name": "api_david",
+  "version": "1.0.0",
+  "description": "taller3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon --watch ./index.js"
+  },
+  "author": "David",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "dotenv": "^16.0.3",
+    "e": "^0.2.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

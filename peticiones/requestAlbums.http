@@ -1,0 +1,33 @@
+###
+GET http://localhost:3000/pinaRecord/albums HTTP/1.1
+
+###
+GET http://localhost:3000/pinaRecord/albums/6 HTTP/1.1
+
+
+###
+POST http://localhost:3000/pinaRecord/albums HTTP/1.1
+Content-Type: application/json
+
+{
+      "_id": 6,
+      "nombreAlbum": "sale el sol",
+      "añoPublicacion": 2001,
+      "genero": 5,
+      "estadoAlbum": "finalizado",
+      "artista": 1
+}
+
+###
+PUT http://localhost:3000/pinaRecord/albums/6 HTTP/1.1
+Content-Type: application/json
+
+{
+      "nombreAlbum": "SALIO EL SOL",
+      "añoPublicacion": 2001,
+      "genero": 5,
+      "estadoAlbum": "finalizado",
+      "artista": 1
+}
+###
+DELETE http://localhost:3000/pinaRecord/albums/6 HTTP/1.1

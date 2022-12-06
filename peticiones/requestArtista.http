@@ -1,0 +1,39 @@
+###
+GET http://localhost:3000/pinaRecord/artistas HTTP/1.1
+
+###
+GET http://localhost:3000/pinaRecord/artistas/3 HTTP/1.1
+
+###
+POST http://localhost:3000/pinaRecord/artistas HTTP/1.1
+Content-Type: application/json
+
+{
+            "_id":3,
+            "noDocumento": 1027522181,
+            "tipoDocumento": "TI",
+            "nombreArtista": "Daniel",
+            "apellidoArtista": "R",
+            "nombreArtistico": "2do",
+            "fechaNacimiento": "05/01/2003",
+            "email": "Daniel@gmail.com",
+            "estado": "Vivo"
+}
+
+###
+PUT http://localhost:3000/pinaRecord/artistas/3 HTTP/1.1
+Content-Type: application/json
+
+{
+      "noDocumento": 1027522181,
+      "tipoDocumento": "TI",
+      "nombreArtista": "DANIEL",
+      "apellidoArtista": "R",
+      "nombreArtistico": "2do",
+      "fechaNacimiento": "05/01/2003",
+      "email": "Daniel@gmail.com",
+      "estado": "Vivo"
+}
+
+###
+DELETE http://localhost:3000/pinaRecord/artistas/3 HTTP/1.1

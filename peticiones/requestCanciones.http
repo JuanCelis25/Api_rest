@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/pinaRecord/canciones HTTP/1.1
+
+###
+GET http://localhost:3000/pinaRecord/canciones/11 HTTP/1.1
+
+###
+POST http://localhost:3000/pinaRecord/canciones HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id": 11,
+    "nombreCancion": "Waka Waka",
+    "fechaGrabacion": "2010-04-28",
+    "album": 5,
+    "estadoCancion": "finalizado"
+}
+
+###
+PUT http://localhost:3000/pinaRecord/canciones/8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id": 8,
+    "nombreCancion": "Waka Waka",
+    "fechaGrabacion": "2010-04-28",
+    "album": 5,
+    "estadoCancion": "finalizado"
+}
+###
+DELETE http://localhost:3000/pinaRecord/canciones/11 HTTP/1.1
